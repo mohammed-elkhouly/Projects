@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monet - Musical Instruments Catalogue</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var buttons = document.querySelectorAll('.button');
+      buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          alert('Item added to cart!'); 
+        });
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <h1>Monet</h1>
+  </header>
+
+  <div class="container">
+    <div class="product">
+      <img src="guitar.jpg" alt="Acoustic Guitar">
+      <div class="product-info">
+        <div class="product-title">Acoustic Guitar</div>
+        <div class="product-description">A classic six-string acoustic guitar suitable for beginners and professionals alike.</div>
+        <div class="price">$199.99</div>
+        <a href="#" class="button">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="keyboard.jpg" alt="Digital Keyboard">
+      <div class="product-info">
+        <div class="product-title">Digital Keyboard</div>
+        <div class="product-description">A versatile digital keyboard with multiple sound options, perfect for music enthusiasts.</div>
+        <div class="price">$299.99</div>
+        <a href="#" class="button">Buy Now</a>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="drums.jpg" alt="Drum Set">
+      <div class="product-info">
+        <div class="product-title">Drum Set</div>
+        <div class="product-description">Complete drum set for drummers of all levels, ideal for live performances or studio sessions.</div>
+        <div class="price">$499.99</div>
+        <a href="#" class="button">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
